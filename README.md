@@ -1,3 +1,5 @@
+# SP-LLaMA-Factory: Plug & Play Sequence Parallelism for Long Post-Training
+
 **Update Apr. 30:**
 We have supported Sequence Parallelism (SP) on Qwen3! (only the default `zigzag-ring` for now). See `sp-example.sh`.
 
@@ -39,24 +41,25 @@ Before that, this codebase could be used directly in place of the original LLaMA
 
 ## Table of Contents
 
-- [Table of Contents](#table-of-contents)
-- [Getting Started](#getting-started)
-  - [Installation](#installation)
-    - [Fresh-Start](#fresh-start)
-    - [Incremental](#incremental)
-  - [Quickstart](#quickstart)
-- [Comparison with Existing SP Frameworks](#comparison-with-existing-sp-frameworks)
-- [Benchmarking sp-LLaMA-Factory](#benchmarking-sp-llama-factory)
-  - [SFT Max Length](#sft-max-length)
-  - [DPO Max Length](#dpo-max-length)
-  - [Correctness](#correctness)
-    - [DeepSpeed Ulysses Correctness \& Speed](#deepspeed-ulysses-correctness--speed)
-- [Developing Notes](#developing-notes)
-  - [Modularity](#modularity)
-  - [ToDos](#todos)
-  - [Limitations](#limitations)
-- [License](#license)
-- [Acknowledgement](#acknowledgement)
+- [SP-LLaMA-Factory: Plug \& Play Sequence Parallelism for Long Post-Training](#sp-llama-factory-plug--play-sequence-parallelism-for-long-post-training)
+  - [Table of Contents](#table-of-contents)
+  - [Getting Started](#getting-started)
+    - [Installation](#installation)
+      - [Fresh-Start](#fresh-start)
+      - [Incremental](#incremental)
+    - [Quickstart](#quickstart)
+  - [Comparison with Existing SP Frameworks](#comparison-with-existing-sp-frameworks)
+  - [Benchmarking sp-LLaMA-Factory](#benchmarking-sp-llama-factory)
+    - [SFT Max Length](#sft-max-length)
+    - [DPO Max Length](#dpo-max-length)
+    - [Correctness](#correctness)
+      - [DeepSpeed Ulysses Correctness \& Speed](#deepspeed-ulysses-correctness--speed)
+  - [Developing Notes](#developing-notes)
+    - [Modularity](#modularity)
+    - [ToDos](#todos)
+    - [Limitations](#limitations)
+  - [License](#license)
+  - [Acknowledgement](#acknowledgement)
 
 
 ## Getting Started
